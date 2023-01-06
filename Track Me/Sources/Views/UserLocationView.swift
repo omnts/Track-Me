@@ -10,7 +10,8 @@ import UIKit
 
 class UserLocationView: UIView {
     private enum Constants {
-        static let cornerRadius: CGFloat = 12
+        static let spacing: CGFloat = 10
+        static let cornerRadius: CGFloat = 10
         public static let buttonSize = CGSize(width: 50, height: 50)
         static let buttonImageInset: CGFloat = 10
     }
@@ -40,10 +41,10 @@ class UserLocationView: UIView {
         translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            label.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 10),
-            safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: label.trailingAnchor, constant: 10),
-            label.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
-            safeAreaLayoutGuide.bottomAnchor.constraint(greaterThanOrEqualTo: label.bottomAnchor, constant: 10),
+            label.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: Constants.spacing),
+            safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: label.trailingAnchor, constant: Constants.spacing),
+            label.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: Constants.spacing),
+            safeAreaLayoutGuide.bottomAnchor.constraint(greaterThanOrEqualTo: label.bottomAnchor, constant: Constants.spacing),
         ])
     }
 }
