@@ -12,8 +12,6 @@ class UserLocationView: UIView {
     private enum Constants {
         static let spacing: CGFloat = 10
         static let cornerRadius: CGFloat = 10
-        public static let buttonSize = CGSize(width: 50, height: 50)
-        static let buttonImageInset: CGFloat = 10
     }
 
     private let label = UILabel()
