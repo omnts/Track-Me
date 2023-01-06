@@ -9,7 +9,6 @@ import Foundation
 import CoreLocation
 
 public struct UserLocation: Codable {
-    /// Time when the activity was created
     let speed: CLLocationSpeed
     public private(set) var averageSpeed: CLLocationSpeed?
     public private(set) var maxSpeed: CLLocationSpeed = 0.0
