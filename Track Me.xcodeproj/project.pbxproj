@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FEDADC51296835F500952266 /* UserLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDADC50296835F500952266 /* UserLocationView.swift */; };
+		FEDADC532968361500952266 /* UserLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDADC522968361500952266 /* UserLocationViewModel.swift */; };
+		FEDADC562968363500952266 /* UserLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDADC552968363500952266 /* UserLocationModel.swift */; };
 		FEFD107D2966CFA800A5E07D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD107C2966CFA800A5E07D /* AppDelegate.swift */; };
 		FEFD107F2966CFA800A5E07D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD107E2966CFA800A5E07D /* SceneDelegate.swift */; };
 		FEFD10812966CFA800A5E07D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD10802966CFA800A5E07D /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FEDADC50296835F500952266 /* UserLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationView.swift; sourceTree = "<group>"; };
+		FEDADC522968361500952266 /* UserLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationViewModel.swift; sourceTree = "<group>"; };
+		FEDADC552968363500952266 /* UserLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationModel.swift; sourceTree = "<group>"; };
 		FEFD10792966CFA800A5E07D /* Track Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Track Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFD107C2966CFA800A5E07D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFD107E2966CFA800A5E07D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FEDADC4D296835C500952266 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEDADC50296835F500952266 /* UserLocationView.swift */,
+			);
+			name = Views;
+			path = Sources/Views;
+			sourceTree = "<group>";
+		};
+		FEDADC4E296835C500952266 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD10802966CFA800A5E07D /* ViewController.swift */,
+			);
+			name = Controllers;
+			path = Sources/Controllers;
+			sourceTree = "<group>";
+		};
+		FEDADC4F296835C500952266 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FEDADC522968361500952266 /* UserLocationViewModel.swift */,
+			);
+			name = ViewModel;
+			path = Sources/ViewModel;
+			sourceTree = "<group>";
+		};
+		FEDADC542968362600952266 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEDADC552968363500952266 /* UserLocationModel.swift */,
+			);
+			name = Model;
+			path = Sources/Model;
+			sourceTree = "<group>";
+		};
 		FEFD10702966CFA700A5E07D = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +141,12 @@
 		FEFD107B2966CFA800A5E07D /* Track Me */ = {
 			isa = PBXGroup;
 			children = (
+				FEDADC542968362600952266 /* Model */,
+				FEDADC4E296835C500952266 /* Controllers */,
+				FEDADC4F296835C500952266 /* ViewModel */,
+				FEDADC4D296835C500952266 /* Views */,
 				FEFD107C2966CFA800A5E07D /* AppDelegate.swift */,
 				FEFD107E2966CFA800A5E07D /* SceneDelegate.swift */,
-				FEFD10802966CFA800A5E07D /* ViewController.swift */,
 				FEFD10822966CFA800A5E07D /* Main.storyboard */,
 				FEFD10852966CFAB00A5E07D /* Assets.xcassets */,
 				FEFD10872966CFAB00A5E07D /* LaunchScreen.storyboard */,
@@ -258,9 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDADC51296835F500952266 /* UserLocationView.swift in Sources */,
+				FEDADC532968361500952266 /* UserLocationViewModel.swift in Sources */,
 				FEFD10812966CFA800A5E07D /* ViewController.swift in Sources */,
 				FEFD107D2966CFA800A5E07D /* AppDelegate.swift in Sources */,
 				FEFD107F2966CFA800A5E07D /* SceneDelegate.swift in Sources */,
+				FEDADC562968363500952266 /* UserLocationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
